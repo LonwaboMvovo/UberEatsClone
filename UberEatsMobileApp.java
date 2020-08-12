@@ -61,13 +61,6 @@ public class UberEatsMobileApp {
          
         System.out.println("Order has been placed! Thank you for your time. Restaurant will process your order soon!\n");
 
-
-         
-
-         
-
-
-         
-
+        // test
     }
 }
