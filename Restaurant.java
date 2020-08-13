@@ -3,15 +3,15 @@ import java.util.ArrayList;
 public class Restaurant {
 
     // Fields/Instance variables:
-    String name;
-    ArrayList<Dish> dishes;
-    ArrayList<Double> costs;
+    private String name;
+    private ArrayList<Dish> dishes;
+    private String location;
 
     // Constructor:
-    public Restaurant(String name, ArrayList<Dish> dishes, ArrayList<Double> costs) {
+    public Restaurant(String name, ArrayList<Dish> dishes, String location) {
         this.name = name;
         this.dishes = dishes;
-        this.costs = costs;
+        this.location = location;
     }
 
     // Getters:
@@ -23,8 +23,8 @@ public class Restaurant {
         return dishes;
     }
 
-    public ArrayList<Double> getCosts() {
-        return costs;
+    public String getLocation() {
+        return location;
     }
 
     // Setters:
@@ -36,18 +36,14 @@ public class Restaurant {
         this.dishes = dishes;
     }
 
-    public void setCosts(ArrayList<Double> costs) {
-        this.costs = costs;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
 
     // Methods:
     @Override
     public String toString() {
-        return "Restaurant{" +
-                "name='" + name + '\'' +
-                ", dishes=" + dishes +
-                ", costs=" + costs +
-                '}';
+        return name + ", " + location + "\nSignature Dishes: " + dishes;
     }
 }
