@@ -3,10 +3,10 @@ public class Dish {
     //Instance VARIABLES
     private String name;
 
-    private int cost;
+    private double cost;
 
 // CONSTRUCTOR
-    public Dish(String name, int cost) {
+    public Dish(String name, double cost) {
         this.name = name;
         
         this.cost = cost;
@@ -25,7 +25,7 @@ public class Dish {
         return name;
    
     }
-    public int getCost() {
+    public double getCost() {
         return cost;
     }
 // Method
