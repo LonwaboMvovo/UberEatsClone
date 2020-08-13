@@ -1,20 +1,37 @@
 public class Dish {
+
+    //Instance VARIABLES
     private String name;
+
     private int cost;
 
-    public Dish(String name,int cost){
+// CONSTRUCTOR
+    public Dish(String name, int cost) {
         this.name = name;
+        
+        this.cost = cost;
+    }    
+// SETTERS
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setCost(int cost) {
         this.cost = cost;
     }
-    public String getName(){ 
-        return this.name; 
+
+    // GETTERS
+    public String getName() {
+        return name;
+   
     }
-    public int getCost(){ 
-        return this.cost; 
+    public int getCost() {
+        return cost;
+    }
+// Method
+    @Override
+    public String toString() {
+        return this.name + " Price: " + this.cost;
     }
 
-    @Override
-    public String toString(){
-        return this.name + "  Price:" +this.cost;
-    }
 }
